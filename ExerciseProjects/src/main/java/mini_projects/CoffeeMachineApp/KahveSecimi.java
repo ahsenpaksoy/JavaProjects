@@ -83,7 +83,7 @@ public class KahveSecimi {
     public void isSugar(Kahve kahve){
         Set<String> validValues = Set.of("0","1", "2", "3","4","5");
         do {
-            System.out.println("Şeker secimi? (0 ile 5 arası bir sayı giriniz, 0: şekersizi belirtir");
+            System.out.println("Şeker eklemek ister misiniz? (0 ile 5 arası bir sayı giriniz, 0: şekersizi belirtir");
             kahve.kacSeker = scan.next();
             if(validValues.contains(kahve.kacSeker)) {
                 break;
@@ -98,7 +98,7 @@ public class KahveSecimi {
         Set<String> validValues = Set.of("0","1", "2");
         scan.nextLine();
         do {
-            System.out.println("Kahvenizi hangi boyutta istersiniz? (küçük boy:0, orta boy:1 , Büyük boy:2, olarak giriniz.");
+            System.out.println("Kahvenizi hangi boyutta istersiniz? (küçük boy:0, orta boy:1 , Büyük boy:2 olarak giriniz.");
 
             kahve.boyut = scan.nextLine();
 
